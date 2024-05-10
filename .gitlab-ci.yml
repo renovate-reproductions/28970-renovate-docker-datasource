@@ -1,0 +1,7 @@
+go_test:
+  image: registry.gitlab.com/gitlab-ci-utils/container-images/go-test:2.3.2@sha256:760ee8534e136cfbbe2fb0e9a6148e61ca96e8cf35f423c541ae4ac82b217c6f
+  # Examples from other container registries that also have the "Extraction digest from manifest response body is deprecated" message
+  #  image: wagoodman/dive:v0.12.0@sha256:b4bbb985609f32ddfeb8a31f2cb254998fce2b95c358ad588a91a1ed138d6033
+  #  image: mcr.microsoft.com/powershell:7.4-alpine-3.17@sha256:c4ab12df1e484deb13f72def16c58b78dfc665e4877522d764f8c884f0bff130
+  script:
+    - echo "Testing..."
